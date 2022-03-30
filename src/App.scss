@@ -1,0 +1,36 @@
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+  "primary":    #C92430,
+  "secondary":  #000000,
+  "dark":       #131921,
+  "success":    #198754,
+  "info":       #0DCAF0,
+  "warning":    #a7c227,
+  "danger":     #DC3545,
+  "light":      #F8F9FA,
+);
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$primary-color: #198754;
+$secondary-color: #97c1ce;
+$white-color: white;
+$black-color: #000;
+$tertiary-color: #9D9E9E;
+$dark-color: #001524;
+
+#navbar {
+  .nav-link {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 700;
+    color: $white-color;
+    text-transform: uppercase;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
